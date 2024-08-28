@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSI Wallet Feature - AI Agent Architecture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-7xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+        <h1 class="text-3xl font-bold mb-6">SSI Wallet Feature in AI Agent Architecture</h1>
+
+        <div class="mb-8">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" class="w-full h-auto">
+                <!-- Background -->
+                <rect width="1200" height="800" fill="#f3f4f6"></rect>
+
+                <!-- SSI Wallet -->
+                <rect x="100" y="50" width="1000" height="300" rx="20" ry="20" fill="#e0f2fe" stroke="#3b82f6" stroke-width="2"></rect>
+                <text x="110" y="90" font-family="Arial" font-size="20" fill="#1e40af">SSI Wallet</text>
+
+                <!-- SSI Wallet Components -->
+                <rect x="150" y="120" width="200" height="100" rx="10" ry="10" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"></rect>
+                <text x="170" y="150" font-family="Arial" font-size="16" fill="#5b21b6">DIDs</text>
+                <text x="170" y="180" font-family="Arial" font-size="14" fill="#5b21b6">Decentralized Identifiers</text>
+
+                <rect x="370" y="120" width="200" height="100" rx="10" ry="10" fill="#fecaca" stroke="#dc2626" stroke-width="2"></rect>
+                <text x="390" y="150" font-family="Arial" font-size="16" fill="#991b1b">Verifiable Credentials</text>
+                <text x="390" y="180" font-family="Arial" font-size="14" fill="#991b1b">Personal, Professional</text>
+
+                <rect x="590" y="120" width="200" height="100" rx="10" ry="10" fill="#d1fae5" stroke="#059669" stroke-width="2"></rect>
+                <text x="610" y="150" font-family="Arial" font-size="16" fill="#065f46">Authentication Tokens</text>
+                <text x="610" y="180" font-family="Arial" font-size="14" fill="#065f46">Access and Interaction</text>
+
+                <rect x="150" y="250" width="200" height="100" rx="10" ry="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"></rect>
+                <text x="170" y="280" font-family="Arial" font-size="16" fill="#92400e">Encryption Keys</text>
+                <text x="170" y="310" font-family="Arial" font-size="14" fill="#92400e">Secure Data</text>
+
+                <rect x="370" y="250" width="200" height="100" rx="10" ry="10" fill="#a7f3d0" stroke="#059669" stroke-width="2"></rect>
+                <text x="390" y="280" font-family="Arial" font-size="16" fill="#065f46">Signature Keys</text>
+                <text x="390" y="310" font-family="Arial" font-size="14" fill="#065f46">Message Validation</text>
+
+                <!-- Connections -->
+                <line x1="250" y1="170" x2="370" y2="170" stroke="#4b5563" stroke-width="2" stroke-dasharray="5,5"></line>
+                <line x1="470" y1="170" x2="590" y2="170" stroke="#4b5563" stroke-width="2" stroke-dasharray="5,5"></line>
+                
+                <line x1="250" y1="290" x2="370" y2="290" stroke="#4b5563" stroke-width="2" stroke-dasharray="5,5"></line>
+                <line x1="470" y1="290" x2="590" y2="290" stroke="#4b5563" stroke-width="2" stroke-dasharray="5,5"></line>
+
+                <!-- External Components -->
+                <circle cx="100" cy="450" r="50" fill="#6b7280"></circle>
+                <text x="60" y="455" font-family="Arial" font-size="14" fill="white">External Systems</text>
+
+                <circle cx="1100" cy="450" r="50" fill="#6b7280"></circle>
+                <text x="1060" y="455" font-family="Arial" font-size="14" fill="white">Blockchain</text>
+
+                <!-- External Connections -->
+                <line x1="250" y1="320" x2="100" y2="400" stroke="#4b5563" stroke-width="2"></line>
+                <line x1="470" y1="320" x2="1100" y2="400" stroke="#4b5563" stroke-width="2"></line>
+            </svg>
+        </div>
+
+        <h2 class="text-2xl font-semibold mb-4">Architecture Overview:</h2>
+        <p class="text-gray-700 mb-6">
+            The SSI Wallet is a critical component of the AI agent architecture, handling various credentials and security measures. The wallet contains Decentralized Identifiers (DIDs), Verifiable Credentials, Authentication Tokens, Encryption Keys, and Signature Keys. Each of these elements plays a vital role in ensuring the identity, security, and functionality of the AI agent.
+        </p>
+
+        <h2 class="text-2xl font-semibold mb-4">Components:</h2>
+        <ul class="list-disc pl-6 mb-6">
+            <li><strong>DIDs (Decentralized Identifiers):</strong> Unique identifiers for the AI agent that provide a decentralized and verifiable identity.</li>
+            <li><strong>Verifiable Credentials:</strong> Certificates or attestations that verify the agent’s attributes and qualifications, such as personal and professional credentials.</li>
+            <li><strong>Authentication Tokens:</strong> Tokens used to authenticate the AI agent for secure interactions and access control.</li>
+            <li><strong>Encryption Keys:</strong> Keys used to encrypt and decrypt data, ensuring secure communication and data protection.</li>
+            <li><strong>Signature Keys:</strong> Keys used to sign messages and transactions, ensuring authenticity and integrity.</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mb-4">User Flow:</h2>
+        <p class="text-gray-700 mb-6">
+            <strong>1. Identity Initialization:</strong> The AI agent is assigned a DID and initial credentials during setup. These DIDs are used for identity management and verification.<br>
+            <strong>2. Credential Issuance:</strong> The agent receives Verifiable Credentials from trusted issuers, which are stored in the SSI wallet.<br>
+            <strong>3. Authentication:</strong> The agent uses Authentication Tokens to prove its identity when accessing services or interacting with other agents.<br>
+            <strong>4. Secure Communication:</strong> Encryption and Signature Keys are used to secure and validate communications and transactions.<br>
+            <strong>5. Integration with External Systems:</strong> The SSI Wallet interacts with external systems such as Blockchains for validation and external services for various functionalities.
+        </p>
+    </div>
+</body>
+</html>

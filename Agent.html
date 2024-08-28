@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent Architecture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-7xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+        <h1 class="text-3xl font-bold mb-6">Detailed AI Agent Architecture</h1>
+
+        <div class="mb-8">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" class="w-full h-auto">
+                <!-- Background -->
+                <rect width="1200" height="900" fill="#f3f4f6"></rect>
+
+                <!-- AI Agent -->
+                <rect x="100" y="100" width="1000" height="700" rx="20" ry="20" fill="#e0f2fe" stroke="#3b82f6" stroke-width="2"></rect>
+                <text x="110" y="130" font-family="Arial" font-size="18" fill="#1e40af">AI Agent</text>
+
+                <!-- SSI Wallet -->
+                <rect x="130" y="160" width="240" height="120" rx="10" ry="10" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"></rect>
+                <text x="150" y="190" font-family="Arial" font-size="16" fill="#5b21b6">SSI Wallet</text>
+                <text x="150" y="220" font-family="Arial" font-size="14" fill="#5b21b6">DIDs, Credentials</text>
+
+                <!-- Payment Wallet -->
+                <rect x="430" y="160" width="240" height="120" rx="10" ry="10" fill="#fecaca" stroke="#dc2626" stroke-width="2"></rect>
+                <text x="450" y="190" font-family="Arial" font-size="16" fill="#991b1b">Payment Wallet</text>
+                <text x="450" y="220" font-family="Arial" font-size="14" fill="#991b1b">Crypto Wallet, Payments</text>
+
+                <!-- WebVoyage Integration -->
+                <rect x="730" y="160" width="240" height="120" rx="10" ry="10" fill="#d1fae5" stroke="#059669" stroke-width="2"></rect>
+                <text x="750" y="190" font-family="Arial" font-size="16" fill="#065f46">WebVoyage Integration</text>
+                <text x="750" y="220" font-family="Arial" font-size="14" fill="#065f46">Web Scraper, API Integration</text>
+
+                <!-- Agent Discovery & Communication -->
+                <rect x="130" y="320" width="240" height="120" rx="10" ry="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"></rect>
+                <text x="150" y="350" font-family="Arial" font-size="16" fill="#92400e">Agent Discovery</text>
+                <text x="150" y="380" font-family="Arial" font-size="14" fill="#92400e">Discovery, Messaging</text>
+
+                <!-- Core AI Capabilities -->
+                <rect x="430" y="320" width="240" height="120" rx="10" ry="10" fill="#a7f3d0" stroke="#059669" stroke-width="2"></rect>
+                <text x="450" y="350" font-family="Arial" font-size="16" fill="#065f46">Core AI Capabilities</text>
+                <text x="450" y="380" font-family="Arial" font-size="14" fill="#065f46">AI/ML Models, Task Management</text>
+
+                <!-- Security & Privacy -->
+                <rect x="730" y="320" width="240" height="120" rx="10" ry="10" fill="#bfdbfe" stroke="#2563eb" stroke-width="2"></rect>
+                <text x="750" y="350" font-family="Arial" font-size="16" fill="#1e40af">Security & Privacy</text>
+                <text x="750" y="380" font-family="Arial" font-size="14" fill="#1e40af">Encryption, Access Control</text>
+
+                <!-- Data Storage & Management -->
+                <rect x="130" y="480" width="240" height="120" rx="10" ry="10" fill="#fde68a" stroke="#d97706" stroke-width="2"></rect>
+                <text x="150" y="510" font-family="Arial" font-size="16" fill="#92400e">Data Storage</text>
+                <text x="150" y="540" font-family="Arial" font-size="14" fill="#92400e">Decentralized Storage, Local Cache</text>
+
+                <!-- User Interaction Interface -->
+                <rect x="430" y="480" width="240" height="120" rx="10" ry="10" fill="#a7f3d0" stroke="#059669" stroke-width="2"></rect>
+                <text x="450" y="510" font-family="Arial" font-size="16" fill="#065f46">User Interaction</text>
+                <text x="450" y="540" font-family="Arial" font-size="14" fill="#065f46">Conversational UI, Dashboard</text>
+
+                <!-- Connections -->
+                <line x1="250" y1="280" x2="550" y2="280" stroke="#4b5563" stroke-width="2" stroke-dasharray="5,5"></line>
+                <line x1="550" y1="280" x2="850" y2="280" stroke="#4b5563" stroke-width="2" stroke-dasharray="5,5"></line>
+                
+                <line x1="250" y1="440" x2="550" y2="440" stroke="#4b5563" stroke-width="2" stroke-dasharray="5,5"></line>
+                <line x1="550" y1="440" x2="850" y2="440" stroke="#4b5563" stroke-width="2" stroke-dasharray="5,5"></line>
+                
+                <line x1="250" y1="600" x2="550" y2="600" stroke="#4b5563" stroke-width="2" stroke-dasharray="5,5"></line>
+                <line x1="550" y1="600" x2="850" y2="600" stroke="#4b5563" stroke-width="2" stroke-dasharray="5,5"></line>
+
+                <!-- External Components -->
+                <circle cx="100" cy="750" r="50" fill="#6b7280"></circle>
+                <text x="60" y="755" font-family="Arial" font-size="14" fill="white">Global Load Balancer</text>
+
+                <circle cx="1100" cy="750" r="50" fill="#6b7280"></circle>
+                <text x="1070" y="755" font-family="Arial" font-size="14" fill="white">Blockchain Registry</text>
+
+                <circle cx="600" cy="850" r="50" fill="#6b7280"></circle>
+                <text x="575" y="855" font-family="Arial" font-size="14" fill="white">IPFS</text>
+
+                <!-- External Connections -->
+                <line x1="300" y1="620" x2="100" y2="700" stroke="#4b5563" stroke-width="2"></line>
+                <line x1="900" y1="620" x2="1100" y2="700" stroke="#4b5563" stroke-width="2"></line>
+                <line x1="600" y1="720" x2="600" y2="800" stroke="#4b5563" stroke-width="2"></line>
+            </svg>
+        </div>
+
+        <h2 class="text-2xl font-semibold mb-4">Architecture Overview:</h2>
+        <p class="text-gray-700 mb-6">
+            This detailed architecture diagram outlines the key components required for an AI agent with capabilities such as managing a self-sovereign identity (SSI) wallet, handling online payments, interacting with the internet via WebVoyage, discovering and communicating with other agents, and more. The architecture is designed to be secure, scalable, and capable of handling complex interactions between multiple AI agents.
+        </p>
+
+        <h2 class="text-2xl font-semibold mb-4">Component Descriptions:</h2>
+        <ul class="list-disc pl-6 mb-6">
+            <li><strong>SSI Wallet:</strong> Manages the agent’s identity and credentials, using decentralized identifiers (DIDs) and verifiable credentials.</li>
+            <li><strong>Payment Wallet:</strong> Handles financial transactions and digital assets, integrating with cryptocurrency networks and payment gateways.</li>
+            <li><strong>WebVoyage Integration:</strong> Enables the AI agent to interact with the web, perform searches, and retrieve data using web scraping and API integration.</li>
+            <li><strong>Agent Discovery & Communication:</strong> Facilitates the discovery of other agents, secure messaging, and inter-agent communication.</li>
+            <li><strong>Core AI Capabilities:</strong> Provides the intelligence needed for decision-making, task management, and personalization.</li>
+            <li><strong>Security & Privacy:</strong> Ensures all communications and transactions are secure, implementing encryption, access control, and privacy safeguards.</li>
+            <li><strong>Data Storage & Management:</strong> Manages data storage using decentralized storage (e.g., IPFS) and local caching for efficient access.</li>
+            <li><strong>User Interaction Interface:</strong> Provides a conversational UI and dashboard for users to interact with their AI agents.</li>
+        </ul>
+
+        <p class="text-gray-700">
+            The architecture connects these internal components with external systems like the Global Load Balancer, Blockchain Registry, and IPFS for comprehensive functionality. This setup ensures that AI agents can autonomously manage tasks, interact securely with the internet and other agents, and handle payments and identity credentials efficiently.
+        </p>
+    </div>
+</body>
+</html>
